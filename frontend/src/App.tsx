@@ -1,3 +1,4 @@
+import Maintenance from "./pages/Maintenance";
 import Trips from "./pages/Trips";
 import Drivers from "./pages/Drivers";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
@@ -13,11 +14,16 @@ function App() {
 
       <Routes>
 
+        <Route 
+        path="/maintenance" 
+        element={<Maintenance />} 
+      />
+
         <Route
           path="/trips"
           element={<Trips />}
         />
-        
+
         <Route
           path="/drivers"
           element={<Drivers />}
